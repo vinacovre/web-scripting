@@ -1,0 +1,10 @@
+body
+{
+    background-color: grey;
+}
+
+#clickedButton
+{
+    color: white;
+    background-color: #9f6060;
+}
