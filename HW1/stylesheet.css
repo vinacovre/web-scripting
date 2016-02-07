@@ -1,0 +1,105 @@
+body
+{
+    background-color:#FFFFFF;
+    /* #F7FDFF */
+}
+
+h1
+{
+    color:#084B8A;
+    font-family:Futura;
+    background-color:#A9E2F3;
+    text-align:center;
+}
+
+h2
+{
+    font-size: 1.3em;
+    color:#084B8A;
+    font-family:Futura;
+    background-color:#A9E2F3;
+}
+
+h5
+{
+    font-size: 1.2em;
+    color:#084B8A;
+    font-family:Garamond;
+    text-align:center;
+}
+
+#PDF
+{
+    text-decoration:none;
+}
+
+q
+{
+    color:#084B8A;
+    font-family:Futura;
+    font-size: 1.3em;
+}
+
+table
+{
+    margin: auto; /* Center the whole table */
+    text-align:center; /* Center the text in each cell of the table */
+    width:39%;
+    border: .15em solid #084B8A;
+    font-family:Futura;
+    font-size: 1em;
+    border-collapse:collapse; /* Collapse the borders to not be a unique border for each cell */
+}
+
+th, td
+{
+    padding: .25em;
+    border: .1em double #084B8A;
+}
+
+#tableName
+{
+    font-size: 1.3em;
+    color:#084B8A;
+    background-color:#A9E2F3;
+}
+
+#tableCategory
+{
+    color:#0B3861;
+    border: 1px solid #084B8A;
+    font-size:1.05em;
+}
+
+#footer
+{
+    font-size: 1.25em;
+    text-align:center;
+    font-family:Garamond;
+}
+
+ul, ol
+{
+    font-size: 1.2em;
+    font-family:Garamond;
+    /* background-color:#E0F2F7; */
+}
+
+p
+{
+    font-size: 1.2em;
+    font-family:Garamond;
+    /* background-color:#E0F2F7; */
+}
+
+div
+{
+    border: 1px solid #084B8A;
+    height:22px;
+    width:52px;
+    background-color: #87B4DE;
+    border-radius: 4px;
+    margin:auto;
+    vertical-align: middle;
+    text-align:center;
+}
