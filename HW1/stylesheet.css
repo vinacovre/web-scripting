@@ -4,6 +4,19 @@ body
     /* #F7FDFF */
 }
 
+button
+{
+    color:white;
+    background-color: #084B8A;
+    font-family:Garamond;
+    font-size: 1.2em;
+    border: 1px solid #A9E2F3;
+    margin: auto;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align:center;
+}
+
 h1
 {
     color:#084B8A;
