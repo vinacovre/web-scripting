@@ -3,19 +3,18 @@
     </head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <title>Basic Info | Vinicius</title>
     </head>
 
     <body>
-        <script src="myScript.js"></script>
-        
         <h1>
             Basic Info
         </h1>
 
         <center>
             <a href="http://facebook.com/viniciuscovre" target="_blank">
-                <img src="img/perfil.png" width="190" height="294"/>
+                <img class="pic" src="img/perfil.png" width="190" height="294" onmouseover="shadow(1)" onmouseout="shadow(0)"/>
             </a>
         </center>
 
@@ -101,5 +100,9 @@
             <a href="3.html">3</a>
         </p>
 
+        <a href="#" id="back-to-top" title="back to top">&uarr;</a>
+
+        <script src="myScript.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>

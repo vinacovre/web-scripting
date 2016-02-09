@@ -3,24 +3,19 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <title>Home | Vinicius</title>
     </head>
 
     <body>
-        <script src="myScript.js"></script>
-        
         <h1>
             Vinicius Covre de Assis
         </h1>
 
-        <center>
-            <em><q>Just a sinner saved by grace</q></em>
-        </center>
-
         <br>
 
         <center>
-            <img src="img/home.png" width="550" height="550"/>
+            <img class="pic" src="img/home.png" width="550" height="550" onmouseover="shadow(1)" onmouseout="shadow(0)"/>
         </center>
 
         <p id="footer">
@@ -28,5 +23,10 @@
             <a href="2.html">2</a>,
             <a href="3.html">3</a>
         </p>
+
+        <a href="#" id="back-to-top" title="back to top">&uarr;</a>
+
+        <script src="myScript.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>
