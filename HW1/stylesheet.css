@@ -106,7 +106,7 @@ p
     /* background-color:#E0F2F7; */
 }
 
-div
+#button
 {
     border: 1px solid #084B8A;
     height:22px;
@@ -116,6 +116,7 @@ div
     margin:auto;
     vertical-align: middle;
     text-align:center;
+    cursor: pointer;
 }
 
 .picShadow
