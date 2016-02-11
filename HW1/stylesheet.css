@@ -11,7 +11,7 @@ button
     font-family:Garamond;
     font-size: 1.2em;
     border: 1px solid #A9E2F3;
-    margin: auto;
+    margin: auto; /* Center de button */
     border-radius: 4px;
     vertical-align: middle;
     text-align:center;
@@ -129,14 +129,14 @@ p
     position: fixed;
     bottom: 2em;
     right: 2em;
-    z-index: 9999;
+    z-index: 9999; /* Makes the button in front of everyon (3 dimentional z-axis) */
     width: 2em;
     height: 2em;
     text-align: center;
     line-height: 1.75em;
     background: #f5f5f5;
     color:#084B8A;
-    cursor: pointer;
+    cursor: pointer; /* Changes the pointer design of the mouse when on */
     border: 0;
     border-radius: 4px;
     text-decoration: none;

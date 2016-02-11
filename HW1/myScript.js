@@ -1,12 +1,12 @@
-function redirect(url)
+function redirect(url) <!-- Redirects to the url -->
 {
-    window.open(url, '_blank');
+    window.open(url, '_blank'); <!-- _blank is to open link in another tab -->
 }
 
-function shadow(verif)
+function shadow(checker) <!-- Insert and takes out shaddow according to the checker input -->
 {
     var profilePic = document.getElementsByClassName('pic')[0];
-    if(verif)
+    if(checker) <!-- If mouse is on the image -->
     {
         profilePic.setAttribute("class", "pic picShadow");
     }
@@ -16,7 +16,7 @@ function shadow(verif)
     }
 }
 
-function changeTitle(newTitle)
+function changeTitle(newTitle) <!-- Changes some characteristics of the Title when the mouses goes on it -->
 {
     var title = $("#title");
     title.html(newTitle);
