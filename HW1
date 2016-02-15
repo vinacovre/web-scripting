@@ -1,0 +1,5 @@
+/* Show all elements in the table posts by the ASC (ascendent) or DESC (descending) order of "title" */
+SELECT * FROM posts ORDER BY title DESC;
+
+/* itens inside [brackets] are considered optional */
+SELECT * FROM posts ORDER BY title [ASC];
