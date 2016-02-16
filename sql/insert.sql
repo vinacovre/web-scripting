@@ -1,0 +1,7 @@
+/* INSERT TABLES */
+
+INSERT INTO `users` VALUES (1,'Vinicius',20),(2,'James',32),(3,'Juan',23),(4,'Carl',29),(5,'Ernesto',55),(6,'Denis',20),(7,'Bruno',38),(8,'Luke',19),(9,'Rodrigo',23),(10,'Mena',30),(11,'Alice',22),(12,'Lucy',26),(13,'Hudson',33),(14,'Amber',39),(15,'Rachel',42);
+
+INSERT INTO `posts` VALUES (1,'Go Dont Stop',4,'hello world'),(2,'By the sea',1,'What if we lie by the ocean'),(3,'Fools',13,'Everyday could be brand new'),(4,'And we go',8,'The government is good'),(5,'Move on',10,'A pocket full of shells'),(6,'Lonely',3,'Are you comming home?'),(7,'Take a chance',1,'Love come save me now'),(8,'Nothing',2,'No one left to blame'),(9,'Go go go',6,'You noticed me'),(10,'Joy',12,'For joy for better days'),(11,'Who is?',9,'I am a chicken fried'),(12,'Sweet Annie',9,'But me I swear that I know nothing'),(13,'Long time running',1,'What would you say if I leave you'),(14,'Up in the clouds',11,'I hate my cellphone'),(15,'Come around',14,'Hitting the ground'),(16,'Joy',1,'hello darkness'),(17,'Joy',5,'Zion is the mountain');
+
+INSERT INTO `comments` VALUES (1,'Thiago M.',5,'Lorem Ipsum'),(2,'Ganso',10,'Lorem sleepsum'),(3,'A. Centuri',11,'Dibre ipsum'),(4,'Sarah',8,'Jorem Gipsum'),(5,'Michel',7,'Lauren Pretisson'),(6,'Viniciera',1,'Why am I talking to you?'),(7,'Alina',6,'I love my glasses'),(8,'Andrew',1,'Juventipsum'),(9,'Mary',2,'I understand'),(10,'Jesse',10,'It is missing 3'),(11,'Matt',1,'Poxa vida ein WOW'),(12,'Alex',9,'Aloiro'),(13,'Jr',15,'Um bebe nasceu'),(14,'Hillary',1,'I loved this post!'),(15,'Donald',7,'All mexicans out!');
