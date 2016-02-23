@@ -1,6 +1,6 @@
 <DOCTYPE! html>
 <html>
-  </head>
+  <head>
     <meta charset="utf-8">
     <title>Interacting With Database</title>
   </head>
@@ -9,7 +9,7 @@
     <h1 style="text-align:center">Blog</h1>
 
     <h2>Post</h2>
-    <form>
+    <form action="formcontroller.php" method="POST">
       Title:<br>
       <input type="text" name="post_title" size="102"><br>
       Content:<br>
@@ -18,6 +18,7 @@
       <br>
       <input type="submit">
     </form>
-
+    <br>
+    <a href="index.php">Show Posts</a>
   </body>
 </html>
