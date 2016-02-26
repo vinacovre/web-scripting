@@ -1,15 +1,15 @@
 <?php
-  include 'conf/conf.php';
+include 'conf/conf.php';
 
-  $obj = new Posts();
-  $postsPDO = $obj->getPosts();
-  $posts = array();
-  foreach ($postsPDO as $key => $value) {
-    $posts[$key]['id'] = $value['id'];
-    $posts[$key]['title'] = $value['title'];
-    $posts[$key]['content'] = $value['content'];
-  }
-  // pr($posts);
+$obj = new Posts();
+$postsPDO = $obj->getPosts();
+$posts = array();
+foreach ($postsPDO as $key => $value) {
+  $posts[$key]['id'] = $value['id'];
+  $posts[$key]['title'] = $value['title'];
+  $posts[$key]['content'] = $value['content'];
+}
+// pr($posts);
 ?>
 <!DOCTYPE html>
 <html>

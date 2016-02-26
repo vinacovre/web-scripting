@@ -1,3 +1,17 @@
+<?php
+  include 'conf/conf.php';
+
+  $obj = new Posts();
+  $postsPDO = $obj->getPosts();
+  $posts = array();
+  foreach ($postsPDO as $key => $value) {
+    $posts[$key]['id'] = $value['id'];
+    $posts[$key]['title'] = $value['title'];
+    $posts[$key]['content'] = $value['content'];
+  }
+  // pr($posts);
+?>
+
 <DOCTYPE! html>
 <html>
   <head>
@@ -16,9 +30,17 @@
       <textarea name="post_content" rows="20" cols="100">
       </textarea>
       <br>
-      <input type="submit">
+      <select onchange="choosePost(this.value)">
+        <?php foreach ($posts as $key => $value) { ?>
+          <option value="<?php echo $value["id"] ?>"><?php echo $value["title"]; ?></option>
+        <?php } ?>
+      </select>
+      <br>
+      <input type="submit" value="Submit by PHP">
+      <button onclick="sendFormByAjax()" type="button">Submit by AJAX</button>
     </form>
     <br>
     <a href="index.php">Show Posts</a>
+    <script type="text/javascript" src="js/ajax.js"></script>
   </body>
 </html>

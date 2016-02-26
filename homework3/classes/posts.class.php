@@ -1,6 +1,6 @@
 <?php
 class Posts extends CRUD{
-  function getPosts(){
+  function getPosts($data = ""){
     $data['table'] = 'posts';
     return $this->read($data);
   }
