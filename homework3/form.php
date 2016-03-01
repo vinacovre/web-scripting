@@ -27,8 +27,7 @@
       Title:<br>
       <input type="text" name="post_title" size="102"><br>
       Content:<br>
-      <textarea name="post_content" rows="20" cols="100">
-      </textarea>
+      <textarea name="post_content" rows="20" cols="100"></textarea>
       <br>
       <select onchange="choosePost(this.value)">
         <?php foreach ($posts as $key => $value) { ?>
