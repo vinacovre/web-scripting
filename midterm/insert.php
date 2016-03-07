@@ -2,7 +2,9 @@
 /* Attempt to connect to MySQL Server ($link is the connection).
   This assumes you are running MySQL Server with default setting.
   Default setting: (<server>, <user>, <password>, <database>). */
-$link = mysqli_connect("localhost", "root", "0263", "midterm");
+
+require("dbinfo.php");
+$link = mysqli_connect("localhost", $username, $password, "midterm");
 
 // Check connection
 if($link === false){

@@ -33,8 +33,14 @@
       xhttp.onreadystatechange = function(){
         if(xhttp.readyState == 4 && xhttp.status == 200){ // Verify connection
           document.getElementById('txtHint').innerHTML = xhttp.responseText;
+          // document.getElementById("submitted").innerHTML = "form submitted";
         }
       };
+      /*var name = document.getElementById('name').value;
+      var breed = document.getElementById('size').value;
+      var queryString = "?Name=" + name ;   queryString +=  "&Breed=" + breed + "&Age=" + age;
+      xhttp.open("GET", "insert.php" + queryString, true);
+      xhttp.send(null); */
       xhttp.open("POST", "insert.php", true);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       var name, size;
