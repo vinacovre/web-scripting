@@ -1,4 +1,5 @@
 <?php
+// Document for generating XML of database
 
 require("dbinfo.php");
 
