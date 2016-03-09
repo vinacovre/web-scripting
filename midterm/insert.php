@@ -1,10 +1,6 @@
 <?php
-/* Attempt to connect to MySQL Server ($link is the connection).
-  This assumes you are running MySQL Server with default setting.
-  Default setting: (<server>, <user>, <password>, <database>). */
-
 require("dbinfo.php");
-$link = mysqli_connect("localhost", $username, $password, "midterm");
+$link = mysqli_connect("localhost", $username, $password, "Test");
 
 // Check connection
 if($link === false){
@@ -12,17 +8,17 @@ if($link === false){
 }
 
 // Uses "escape" for security
-$name = mysqli_real_escape_string($link, $_POST['Name']); // needs to match with name on index.html
-$size = mysqli_real_escape_string($link, $_POST['Size']);
+$flavor = mysqli_real_escape_string($link, $_POST['flavor']); // needs to match with name on index.php
+$scoops = mysqli_real_escape_string($link, $_POST['scoops']);
 
 // Query to insert into database
-$sql = "INSERT INTO Hamburgers (name, size) VALUES ('$name', '$size')"; //key-value
+$sql = "INSERT INTO sales (flavor, scoops) VALUES ('$flavor', '$scoops')";
 
 // Checking insertion on database
 if(mysqli_query($link, $sql)){
-  echo "Records added to Hamburger database.";
+  echo "Records added to sales database.";
 } else{
-  echo "ERROR. Could not insert to Hamburger database. " . mysqli_error($link);
+  echo "ERROR. Could not insert to sales database. " . mysqli_error($link);
 }
 
 // Closing connection
@@ -33,16 +29,16 @@ mysqli_close($link);
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hamburger Insertion</title>
+    <title>Data Insertion</title>
   </head>
   <body>
     <br>
     <br>
-    <!-- Link to get back to Hamburger screen (home) -->
-    <a href="index.html">BACK TO HAMBURGERS</a>
-    <br>
-    <br>
-    <!-- Link to Hamburgers list -->
-    <a href="select.php">SHOW HAMBURGERS</a>
+    <!-- Link to get back to Home screen -->
+    <a href="index.php">Home</a>
+    <!-- <br>
+    <br> -->
+    <!-- Link to data list -->
+    <!-- <a href="select.php">Show Data</a> -->
   </body>
 </html>

@@ -2,46 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Show Hamburgers</title>
+    <title>Show Database</title>
   </head>
   <body>
     <?php
-    
+
     // Verify the return of AJAX message after insert
     if ($_GET['message'] == "success") {
-      echo "Records added to Hamburger database.";
+      echo "Records added to database.";
     }
 
-    /* Attempt to connect to MySQL Server ($link is the connection).
-      This assumes you are running MySQL Server with default setting.
-      Default setting: (<server>, <user>, <password>, <database>). */
-    $link = mysqli_connect("localhost", "root", "0263", "midterm");
+    require("dbinfo.php");
+    $link = mysqli_connect("localhost", $username, $password, "Test");
 
     // Check connection
     if($link === false){
       die("ERROR: connection not established. " . mysqli_connect_error());
     }
 
-    $sql = "SELECT * FROM Hamburgers";
+    $sql = "SELECT * FROM sales";
     $result = mysqli_query($link, $sql);
 
     if($result){
       if(mysqli_num_rows($result) > 0){
         echo "<table width='39%' border='.15em solid black'>";
           echo "<tr>";
-            echo "<th colspan='4'>Hamburgers</th>";
+            echo "<th colspan='3'>Sales</th>";
           echo "</tr>";
 
           echo "<tr>";
             echo "<th>#</th>";
-            echo "<th>Name</th>";
-            echo "<th>Size</th>";
+            echo "<th>Flavor</th>";
+            echo "<th>Scoops</th>";
           echo "</tr>";
         while ($row = mysqli_fetch_array($result)){
           echo "<tr>";
-            echo "<td>" . $row['id'] . "</td>";
-            echo "<td>" . $row['name'] . "</td>";
-            echo "<td>" . $row['size'] . "</td>";
+            echo "<td>" . $row['order_id'] . "</td>";
+            echo "<td>" . $row['flavor'] . "</td>";
+            echo "<td>" . $row['scoops'] . "</td>";
           echo "</tr>";
         }
         echo "<table>";
@@ -57,6 +55,6 @@
 
     <br>
     <!-- Link to get back to Hamburger screen (home) -->
-    <a href="index.html">BACK TO HAMBURGERS</a>
+    <a href="index.php">Home</a>
   </body>
 </html>
