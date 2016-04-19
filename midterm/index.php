@@ -60,7 +60,6 @@ $result = mysqli_query($link, $sql);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp.send(queryString);
       // location.assign("show.php?message=success");
-      // HAVING PROBLEMS WITH AJAX INSERTION. I CANNOT SELECT THE VALUE OF THE FLAVORS
     }
     </script>
 
